@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  height: 100vh;
+  display: flex;
+  background-color:rgb(1, 35, 79);
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
+  width: 75%;
+  background: linear-gradient(to bottom , rgba(0,0,0,0) , #020230) ,  url("./assets/background_image.jpeg") center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+.top{
+  height: 50%;
+  position: relative;
+}
+
+.timer{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border : 5px solid white;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  bottom : 10px;
+  left : 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom{
+  height: 50%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.pyramid{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moneyList{
+  list-style: none;
+  width: 100%;
+  padding : 20px;
+}
+
+.moneyListItem{
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding:5px;
+  margin : 12px 0px;
+}
+
+.moneyListItem.active{
+  background-color: teal;
+}
+
+
+.moneyListItemNumber{
+  font-size: 18px;
+  font-weight: 100;
+  width: 30%;
+}
+
+.moneyListItemAmount{
+    font-size: 20px;
+}
+
+.endText{
+  position: relative;
+  top : 0;
+  bottom :0;
+  left :0;
+  right: 0;
+  margin:auto;
+  font-size: 50px;
 }
